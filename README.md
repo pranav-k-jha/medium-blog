@@ -1,4 +1,4 @@
-# Medium Clone Project
+# Medium-Blog Clone Project
 
 This project is a clone of the Medium platform, built using modern technologies including React, Cloudflare Workers, Zod for validation, TypeScript, Prisma with connection pooling, Postgres, and JWT for authentication (Cookies approach).
 
