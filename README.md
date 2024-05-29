@@ -68,12 +68,6 @@ Deploy your Cloudflare Worker app and test the production URL using Postman.
 - `frontend/`: Contains the React frontend code.
 - `common/`: Contains shared code and types used by both frontend and backend.
 
-## Usage
-
-1. Clone the repository.
-2. Navigate to the respective directories (`backend/`, `frontend/`, `common/`) and follow the setup instructions in the README files.
-3. Start the backend server and frontend development server.
-4. Test the application using Postman and in the browser.
 
 ## License
 

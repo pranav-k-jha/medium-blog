@@ -11,6 +11,11 @@ dist/
 .idea/usage.statistics.xml
 .idea/shelf
 
+# wrangler
+wrangler.toml
+*.toml
+
+
 # deps
 node_modules/
 .wrangler
