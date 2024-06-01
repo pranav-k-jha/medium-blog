@@ -58,6 +58,10 @@ Refer to [Hono's API routing documentation](https://hono.dev/api/routing) for mo
 1. Set up environment variables like `JWT_SECRET` and `DATABASE_URL`.
 2. Use TypeScript for context variables and Prisma integration.
 
+### Validation
+
+Zod validation for sign up sign in, blog POST and PUT 
+
 ### Deployment
 
 Deploy your Cloudflare Worker app and test the production URL using Postman.
