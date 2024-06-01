@@ -13,7 +13,7 @@ dist/
 
 # wrangler
 wrangler.toml
-*.toml
+
 
 
 # deps

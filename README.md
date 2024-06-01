@@ -4,6 +4,13 @@ This project is a clone of the Medium platform, built using modern technologies 
 
 ## Getting Started
 
+### Project Structure
+
+MEDIUM-BLOG
+- backend - contains backend setup using Hono for the blogging app and deployed to CloudFlare Worker
+- common - contains common modules deloyed to npm for use in both backend and fronend such as zod schema
+- frontend - created using vite with React and TypeScript, user interface and design 
+
 ### Setup Backend
 
 1. Create a new folder named `medium`.
