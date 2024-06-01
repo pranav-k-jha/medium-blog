@@ -3,7 +3,7 @@ import { Hono } from "hono";
 import { PrismaClient } from "@prisma/client/edge";
 import { withAccelerate } from "@prisma/extension-accelerate";
 import { sign } from "hono/jwt";
-import { signupInput } from "@pranav-k-jha/medium-common"
+import { signupInput, signinInput } from "@pranav-k-jha/medium-common";
 
 export const userRouter = new Hono<{
   Bindings: {
@@ -17,8 +17,8 @@ userRouter.post("/signup", async (c) => {
   const prisma = new PrismaClient({
     datasourceUrl: c.env.DATABASE_URL,
   }).$extends(withAccelerate());
-  
-  console.log(signupInput.safeParse(body))
+
+  console.log(signupInput.safeParse(body));
   const { success } = signupInput.safeParse(body);
 
   if (!success) {
@@ -48,6 +48,11 @@ userRouter.post("/signin", async (c) => {
     datasourceUrl: c.env?.DATABASE_URL,
   }).$extends(withAccelerate());
 
+  const { success } = signinInput.safeParse(body);
+  if (!success) {
+    c.status(411);
+    return c.json({ message: "Invalid Credentials" });
+  }
   try {
     const user = await prisma.user.findUnique({
       where: {
