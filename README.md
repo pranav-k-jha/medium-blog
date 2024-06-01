@@ -6,6 +6,7 @@ This project is a clone of the Medium platform, built using modern technologies 
 
 ### Project Structure
 
+
 MEDIUM-BLOG
 - backend - contains backend setup using Hono for the blogging app and deployed to CloudFlare Worker
 - common - contains common modules deloyed to npm for use in both backend and fronend such as zod schema
