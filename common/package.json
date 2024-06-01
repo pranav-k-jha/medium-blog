@@ -1,8 +1,8 @@
 {
-  "name": "common",
-  "version": "1.0.0",
+  "name": "@pranav-k-jha/medium-common",
+  "version": "1.0.7",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

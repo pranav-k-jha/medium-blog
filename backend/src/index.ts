@@ -1,7 +1,7 @@
 import { Hono } from "hono";
 
 import { userRouter } from "./routes/user";
-import { blogRouter } from "./routes/blog2";
+import { blogRouter } from "./routes/blog";
 
 
 // Create the main Hono app
